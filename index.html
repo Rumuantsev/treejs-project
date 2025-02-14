@@ -4,42 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Threejs app</title>
-    <style>
-      body {
-        margin: 0;
-      }
-      #info {
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: white;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        pointer-events: none;
-        z-index: 10;
-      }
-      #info h1 {
-        font-size: 14px;
-      }
-    </style>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/css2d.css"
     />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <div id="info">
-      Нажмите "a" или "b" для изменения положения точек "A" или "B,
+      Нажмите "a" или "b" для изменения положения точек "A" или "B",
       соответственно<br /><br />
       <div id="info_azimuth">
-        Угол накола отрезка AB относительно плоскости XY: :
+        Угол накола отрезка AB к плоскости XY: :
         <span id="angle">0</span>°
       </div>
-      <div id="info_azimuth">Азимут: <span id="azimuth">0</span>°</div>
+      <div id="info_azimuth">
+        Азимут относительно точки A: <span id="azimuth">0</span>°
+      </div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
